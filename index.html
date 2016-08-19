@@ -8,7 +8,15 @@
   </head>
   <body>
     <script>
-    renderMathInElement(document.body);
+    renderMathInElement(document.body,{
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\(", right: "\\)", display: false}
+              ]
+          }
+    );
   </script>
       Should ignore the following in a pre block
        <pre>
